@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos para la codificación de caracteres y la vista responsive -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gestor de Tareas</h1>
+
+    <!-- Contenedor para los elementos del formulario y la lista de tareas -->
+    <div class="container">
+        <!-- Input de texto donde el usuario puede escribir una nueva tarea -->
+        <input type="text" id="taskInput" placeholder="Escribe tu tarea aquí">
+        <!-- Botón que llama a la función para añadir una tarea -->
+        <button onclick="addTask()">Añadir tarea</button>
+        <!-- Botón que llama a la función para obtener la lista de tareas -->
+        <button onclick="getTasks()">Ver lista de tareas</button>
+       
+        <button onclick="deleteTasks()">Borrar lista de tareas</button>
+
+        <h2>Lista de Tareas</h2>
+        <!-- Lista no ordenada donde se mostrarán las tareas -->
+        <ul id="taskList"></ul>
+    </div>
+
+    <!-- Enlace al archivo JavaScript que contiene la lógica del cliente -->
+    <script src="script.js"></script>
+</body>
+</html>
+

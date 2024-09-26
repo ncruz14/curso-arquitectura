@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Metadatos para la codificación de caracteres y la vista responsive -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestor de Tareas</title>
@@ -15,12 +14,12 @@
     <div class="container">
         <!-- Input de texto donde el usuario puede escribir una nueva tarea -->
         <input type="text" id="taskInput" placeholder="Escribe tu tarea aquí">
-        <!-- Botón que llama a la función para añadir una tarea -->
-        <button onclick="addTask()">Añadir tarea</button>
-        <!-- Botón que llama a la función para obtener la lista de tareas -->
-        <button onclick="getTasks()">Ver lista de tareas</button>
-       
-        <button onclick="deleteTasks()">Borrar lista de tareas</button>
+        <!-- Botones para añadir tarea, ver la lista de tareas y borrar la lista -->
+        <div class="button-container">
+            <button class="btn add-btn" onclick="addTask()">Añadir tarea</button>
+            <button class="btn view-btn" onclick="getTasks()">Ver lista de tareas</button>
+            <button class="btn delete-btn" onclick="deleteTasks()">Borrar lista de tareas</button>
+        </div>
 
         <h2>Lista de Tareas</h2>
         <!-- Lista no ordenada donde se mostrarán las tareas -->
@@ -31,4 +30,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-

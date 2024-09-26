@@ -3,7 +3,7 @@ import requests
 URL = "http://127.0.0.1:5000/tareas"
 
 # Función para listar tareas
-def listar_tareas():
+def listar_tareas():    
     print("Ingreso a LISTADO DE TAREAS:")
     response = requests.get(URL)
     if response.status_code == 200 :
